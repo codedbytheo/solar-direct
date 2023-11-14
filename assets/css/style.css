@@ -28,6 +28,9 @@ body {
     padding: 1.25rem 1rem;
 }
 /* mobile nav */
+.desktopNav {
+    display: none;
+}
 .navContainer {
     width: 100%;
 }
@@ -80,12 +83,14 @@ body {
 #email {
     background-color: rgba(204, 204, 204, 0.25);
     margin-bottom: 0.5rem;
+    transition: 0.15s all ease-in-out;
 }
 #email:hover {
     background-color: rgba(204, 204, 204, 0.75);
 }
 #whatsapp {
     background-color: rgba(37, 211, 102, 0.25);
+    transition: 0.15s all ease-in-out;
 }
 #whatsapp:hover {
     background-color: rgba(37, 211, 102, 0.55);
@@ -146,5 +151,35 @@ body {
     }
     .mobileMenu.active {
         display: none;
+    }
+    .desktopNav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .navLogo {
+        width: 225px;
+    }
+    .navLogo img {
+        max-width: 100%;
+    }
+    .navLinks .navLinkList {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+    }
+    .navLinkList .navLink {
+        padding: 7px 15px;
+        border-radius: 5px;
+    }
+    .navLink a {
+        font-size: 1.1rem;
+        font-weight: 600;
+        letter-spacing: 1px;
+    }
+    .navLink ion-icon {
+        font-size: 1.2rem;
+        margin-left: 5px;
+        transform: translateY(3.25px);
     }
 }
