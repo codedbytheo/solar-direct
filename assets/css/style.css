@@ -5,7 +5,7 @@
     --background100: #fcfcfc;
     --background200: #ccc;
     --text100: #333;
-    --primary100: #09e5f1;
+    --primary100: #0cd4df;
     --secondary100: #1333f1;
 }
 html {
@@ -13,6 +13,7 @@ html {
     scroll-behavior: smooth;
 }
 * {
+    color: var(--text100);
     margin: 0;
     padding: 0;
     font-family: "Poppins", sans-serif;
@@ -21,7 +22,114 @@ html {
     list-style: none;
 }
 body {
+    background-color: var(--background100);
     max-width: 1440px;
     margin: 0 auto;
-    padding: 0rem 1rem;
+    padding: 1.25rem 1rem;
+}
+/* mobile nav */
+.navContainer {
+}
+.mobileNav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navLogoHolder {
+    width: 180px;
+}
+.navLogoHolder img {
+    width: 100%;
+}
+.navNavigationHolder #navMenu {
+    background-color: var(--primary100);
+    color: var(--white);
+    padding: 8px 5px;
+    border-radius: 5px;
+    transition: 0.15s all ease-in-out;
+}
+#navMenu ion-icon {
+    transform: translate(0.5px, 8.25px);
+    color: var(--white);
+    font-size: 1.85rem;
+}
+/* mobile click menu */
+.mobileMenu {
+    display: none;
+}
+.mobileMenu {
+    margin-top: 0.5rem;
+}
+.menuList {
+    text-align: center;
+}
+.listItemHolder {
+    font-size: 1.05rem;
+    padding: 0.5rem 0rem;
+    border-radius: 5px;
+    transition: 0.1s all ease-in-out;
+}
+.listItemHolder ion-icon {
+    margin-left: 5px;
+    transform: translate(0px, 2.5px);
+}
+#email {
+    background-color: rgba(204, 204, 204, 0.25);
+    margin-bottom: 0.5rem;
+}
+#email:hover {
+    background-color: rgba(204, 204, 204, 0.75);
+}
+#whatsapp {
+    background-color: rgba(37, 211, 102, 0.25);
+}
+#whatsapp:hover {
+    background-color: rgba(37, 211, 102, 0.55);
+}
+/* all media queries */
+@media (min-width: 425px) {
+    body {
+        padding: 1.25rem;
+    }
+}
+@media (min-width: 550px) {
+    .navNavigationHolder #navMenu {
+        font-size: 1rem;
+        letter-spacing: 1px;
+        padding: 7px 10px;
+    }
+    #navMenu ion-icon {
+        margin-left: 5px;
+        transform: translate(0px, 3px);
+        color: var(--white);
+        font-size: 1.2rem;
+    }
+    .menuList {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 15px;
+    }
+    .listItemHolder {
+        width: 50%;
+    }
+    #email {
+        margin-bottom: 0;
+    }
+}
+@media (min-width: 730px) {
+    .navLogoHolder {
+        width: 200px;
+    }
+    .navNavigationHolder #navMenu {
+        padding: 10px 13px;
+        font-size: 1.15rem;
+    }
+    #navMenu ion-icon {
+        font-size: 1.25rem;
+        transform: translate(0px 2px);
+    }
+    .listItemHolder {
+        font-size: 1.1rem;
+    }
 }

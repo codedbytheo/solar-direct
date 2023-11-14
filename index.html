@@ -48,8 +48,56 @@
         <link
             rel="stylesheet"
             href="./assets/css/style.css" />
+        <!-- ion-icons library -->
+        <script
+            type="module"
+            src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script
+            nomodule
+            src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    </head>
+    <body>
+        <nav class="navContainer">
+            <div class="mobileNav">
+                <div class="navLogoHolder">
+                    <img
+                        src="./assets/images/solarDirectLogo.webp"
+                        alt="Solar-Direct's company logo." />
+                </div>
+                <div class="navNavigationHolder">
+                    <a
+                        href="#"
+                        id="navMenu"
+                        ><ion-icon name="open-outline"></ion-icon
+                    ></a>
+                </div>
+            </div>
+
+            <div class="mobileMenu">
+                <ul class="menuList">
+                    <li
+                        class="listItemHolder"
+                        id="email">
+                        <a
+                            href="#"
+                            class="listItem"
+                            >Submit an email form</a
+                        ><ion-icon name="mail-outline"></ion-icon>
+                    </li>
+                    <li
+                        class="listItemHolder"
+                        id="whatsapp">
+                        <a
+                            href="#"
+                            class="listItem"
+                            >WhatsApp us directly</a
+                        ><ion-icon name="logo-whatsapp"></ion-icon>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
         <!-- js link -->
         <script src="./assets/js/app.js"></script>
-    </head>
-    <body></body>
+    </body>
 </html>
