@@ -29,6 +29,7 @@ body {
 }
 /* mobile nav */
 .navContainer {
+    width: 100%;
 }
 .mobileNav {
     display: flex;
@@ -56,6 +57,9 @@ body {
 /* mobile click menu */
 .mobileMenu {
     display: none;
+}
+.mobileMenu.active {
+    display: block;
 }
 .mobileMenu {
     margin-top: 0.5rem;
@@ -131,5 +135,16 @@ body {
     }
     .listItemHolder {
         font-size: 1.1rem;
+    }
+}
+@media (min-width: 1000px) {
+    .mobileNav {
+        display: none;
+    }
+    .mobileMenu {
+        display: none;
+    }
+    .mobileMenu.active {
+        display: none;
     }
 }
