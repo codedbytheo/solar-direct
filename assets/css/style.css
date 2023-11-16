@@ -246,6 +246,43 @@ body {
     transition: 0.25s all ease-in-out;
     border-radius: 10px;
 }
+/* footer */
+footer {
+    background-color: rgba(243, 243, 243, 0.7);
+    margin-top: 3rem;
+    border-radius: 10px 10px 0px 0px;
+}
+footer .footerNav {
+    text-align: center;
+    padding-top: 20px;
+}
+footer .footerNav ul {
+    margin-bottom: 15px;
+}
+footer .footerNav ul li {
+    margin-bottom: 5px;
+}
+footer .footerNav ul li a {
+    color: var(--text200);
+    padding-bottom: 0.1rem;
+}
+footer .footerNav ul li a:hover {
+    border-bottom: 1.5px solid var(--secondary100);
+}
+footer .footerSupp {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+}
+footer .footerSupp img {
+    width: 80%;
+    margin: 0 auto;
+    max-width: 320px;
+    margin-bottom: 10px;
+}
+footer .footerSupp p {
+    padding: 0px 20px 15px;
+}
 /* all media queries */
 @media (min-width: 375px) {
     .navNavigationHolder #navMenu {
@@ -281,10 +318,16 @@ body {
     .projectContainer .projectTitle h2 {
         font-size: 1.7rem;
     }
+    footer .footerSupp p {
+        padding: 0px 30px 15px;
+    }
 }
 @media (min-width: 425px) {
     body {
         padding: 1.25rem;
+    }
+    footer .footerSupp p {
+        padding: 0px 50px 15px;
     }
 }
 @media (min-width: 550px) {
@@ -300,12 +343,38 @@ body {
     #email {
         margin-bottom: 0;
     }
+    footer .footerSupp p {
+        padding: 0px 140px 15px;
+    }
 }
 @media (min-width: 600px) {
     .projectContainer .projectImages {
         display: grid;
         grid-template-columns: 1fr 1fr;
         justify-items: center;
+    }
+    footer {
+        padding: 2rem 2rem 1rem;
+        margin-top: 4rem;
+    }
+    footer .footerNav {
+        padding: 0;
+    }
+    footer .footerNav ul {
+        display: flex;
+        justify-content: space-evenly;
+    }
+    footer .footerNav ul li {
+        margin: 0;
+    }
+    footer .footerSupp {
+        margin-top: 30px;
+    }
+    footer .footerSupp img {
+        margin-bottom: 10px;
+    }
+    footer .footerSupp p {
+        padding: 0;
     }
 }
 @media (min-width: 645px) {
@@ -396,8 +465,34 @@ body {
     .projectContainer .projectImages {
         gap: 25px;
     }
-}
-@media (min-width: 850px) {
+    footer {
+        display: flex;
+        flex-direction: row-reverse;
+        padding: 1rem 2rem;
+        align-items: center;
+        margin-top: 4.5rem;
+    }
+    footer .footerNav {
+        width: 50%;
+        text-align: end;
+        padding: 0;
+    }
+    footer .footerNav ul li {
+        margin: 0;
+    }
+    footer .footerSupp {
+        width: 50%;
+        text-align: left;
+        margin: 0;
+    }
+    footer .footerSupp img {
+        max-width: 250px;
+    }
+    footer .footerSupp p {
+        padding: 0;
+        font-size: 0.9rem;
+        max-width: 215px;
+    }
 }
 @media (min-width: 900px) {
     .heroContainer .heroLeft h1 {
@@ -415,6 +510,9 @@ body {
     }
     .projectContainer .projectTitle h2 {
         font-size: 1.7rem;
+    }
+    footer {
+        padding: 2rem 3rem;
     }
 }
 @media (min-width: 1000px) {
@@ -471,6 +569,13 @@ body {
         transform: scale(1.02);
         box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     }
+    footer {
+        margin-top: 5rem;
+    }
+    footer .footerSupp p {
+        font-size: 1rem;
+        max-width: 240px;
+    }
 }
 @media (min-width: 1200px) {
     .heroContainer .heroLeft h1 {
@@ -526,6 +631,10 @@ body {
 @media (min-width: 1299px) {
     .reviewGrid .reviewCard {
         height: 430px;
+    }
+    footer {
+        padding: 2rem 4rem;
+        margin-top: 6rem;
     }
 }
 @media (min-width: 1340px) {
