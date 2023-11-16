@@ -135,6 +135,51 @@ body {
     width: 100%;
     max-width: 550px;
 }
+/* client reviews */
+.reviewGrid {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 25px;
+    margin-top: 3rem;
+}
+.reviewGrid .reviewCard {
+    background-color: rgba(243, 243, 243, 0.7);
+    padding: 1rem;
+    border-radius: 10px;
+}
+.reviewGrid .reviewCard .customerProfile {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.reviewGrid .reviewCard .customerProfile ion-icon {
+    font-size: 1.8rem;
+    background-color: var(--secondary100);
+    color: var(--white);
+    padding: 7.5px;
+    border-radius: 5px;
+}
+.reviewGrid .reviewCard .customerProfile .customerDetails p {
+    font-size: 1rem;
+}
+.reviewGrid .reviewCard .customerProfile .customerDetails p b {
+    font-size: 0.9rem;
+}
+.reviewGrid .reviewCard .customerReview {
+    margin-top: 20px;
+}
+.reviewGrid .reviewCard .customerReview p {
+    font-size: 0.9rem;
+    text-align: justify;
+}
+.reviewGrid .sectionTitle h2 {
+    margin-bottom: 15px;
+    font-size: 1.45rem;
+}
+#reviewTitleSpan {
+    color: var(--primary100);
+}
 /* all media queries */
 @media (min-width: 375px) {
     .navNavigationHolder #navMenu {
@@ -150,11 +195,13 @@ body {
         font-size: 1.7rem;
     }
     .heroContainer .heroLeft p {
-        font-size: 1rem;
         margin-bottom: 35px;
     }
     .heroContainer .heroLeft div .heroBtn {
         padding: 0.5rem 0.75rem;
+    }
+    .reviewGrid .sectionTitle h2 {
+        font-size: 1.7rem;
     }
 }
 @media (min-width: 425px) {
@@ -174,6 +221,19 @@ body {
     }
     #email {
         margin-bottom: 0;
+    }
+}
+@media (min-width: 645px) {
+    .reviewGrid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .sectionTitle {
+        grid-area: 1;
+        align-self: baseline;
+    }
+    .cardOne {
+        grid-area: 2;
     }
 }
 @media (min-width: 730px) {
@@ -211,11 +271,29 @@ body {
         width: 45%;
         text-align: end;
     }
+    .reviewGrid {
+        margin-top: 4rem;
+    }
+    .reviewGrid .reviewCard {
+        padding: 1.15rem;
+    }
+    .reviewGrid .reviewCard .customerProfile .customerDetails p b {
+        font-size: 1rem;
+    }
+    .reviewGrid .sectionTitle h2 {
+        font-size: 1.6rem;
+    }
 }
 @media (min-width: 900px) {
     .heroContainer .heroLeft h1 {
         font-size: 1.7rem;
         max-width: 310px;
+    }
+    .reviewGrid .sectionTitle h2 {
+        font-size: 1.7rem;
+    }
+    .reviewGrid .reviewCard {
+        padding: 1.25rem;
     }
 }
 @media (min-width: 1000px) {
@@ -234,7 +312,7 @@ body {
         justify-content: space-between;
     }
     .navLogo {
-        width: 225px;
+        width: 200px;
     }
     .navLogo img {
         max-width: 100%;
@@ -280,6 +358,34 @@ body {
     .heroContainer .heroLeft div .heroBtn {
         padding: 0.8rem 1.15rem;
     }
+    .reviewGrid {
+        grid-template-columns: 1fr 1fr 1fr;
+        background-color: rgba(243, 243, 243, 0.7);
+        padding: 2rem;
+        border-radius: 15px;
+    }
+    .sectionTitle {
+        grid-column-start: 1;
+        grid-column-end: 4;
+        text-align: center;
+    }
+    .reviewGrid .reviewCard {
+        background-color: var(--white);
+        height: 465px;
+        transition: 0.25s all ease-in-out;
+    }
+    .reviewGrid .reviewCard:hover {
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        transform: scale(1.015);
+    }
+    .reviewGrid .reviewCard .customerReview p {
+        text-align: justify;
+    }
+}
+@media (min-width: 1299px) {
+    .reviewGrid .reviewCard {
+        height: 430px;
+    }
 }
 @media (min-width: 1340px) {
     .heroContainer {
@@ -292,9 +398,20 @@ body {
         max-width: 660px;
         margin-bottom: 45px;
     }
+    .reviewGrid .reviewCard {
+        height: 410px;
+    }
 }
 @media (min-width: 1440px) {
     .heroContainer .heroLeft p {
         font-size: 1.05rem;
+    }
+    .reviewGrid .reviewCard {
+        height: 385px;
+    }
+}
+@media (min-width: 1460px) {
+    .reviewGrid .reviewCard {
+        height: 370px;
     }
 }
