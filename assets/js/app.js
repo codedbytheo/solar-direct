@@ -1,3 +1,4 @@
+//navbar js
 const navMenu = document.getElementById("navMenu");
 const mobileMenu = document.querySelector(".mobileMenu");
 const ionIcon = navMenu.querySelector("ion-icon");
@@ -54,3 +55,33 @@ function handleResize() {
 window.addEventListener("resize", handleResize);
 
 handleResize();
+
+// floating whatsapp js
+
+document.addEventListener("DOMContentLoaded", function () {
+    const whatsappBtn = document.querySelector(".floatingWhatsapp");
+
+    function checkScroll() {
+        const scrollDown = window.scrollY;
+        const windowHeight = window.innerHeight;
+        const documentHeight = document.body.scrollHeight;
+
+        if (window.innerWidth >= 850) {
+            whatsappBtn.style.display = "none";
+        } else {
+            if (
+                scrollDown > 100 &&
+                scrollDown + windowHeight < documentHeight - 275
+            ) {
+                whatsappBtn.style.display = "block";
+            } else {
+                whatsappBtn.style.display = "none";
+            }
+        }
+    }
+
+    checkScroll();
+
+    window.addEventListener("scroll", checkScroll);
+    window.addEventListener("resize", checkScroll);
+});

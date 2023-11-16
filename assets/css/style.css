@@ -283,6 +283,21 @@ footer .footerSupp img {
 footer .footerSupp p {
     padding: 0px 20px 15px;
 }
+/* floating whatsapp button */
+.floatingWhatsapp {
+    background-color: #25d366;
+    border-radius: 5px;
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    width: 35px;
+    height: 35px;
+}
+.floatingWhatsapp > ion-icon {
+    font-size: 1.75rem;
+    color: var(--white);
+    transform: translate(4.5px, 4px);
+}
 /* all media queries */
 @media (min-width: 375px) {
     .navNavigationHolder #navMenu {
@@ -320,6 +335,16 @@ footer .footerSupp p {
     }
     footer .footerSupp p {
         padding: 0px 30px 15px;
+    }
+    .floatingWhatsapp {
+        bottom: 30px;
+        right: 30px;
+        width: 40px;
+        height: 40px;
+    }
+    .floatingWhatsapp > ion-icon {
+        font-size: 2rem;
+        transform: translate(5.5px, 4.5px);
     }
 }
 @media (min-width: 425px) {
