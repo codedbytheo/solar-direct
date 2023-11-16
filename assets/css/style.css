@@ -222,6 +222,30 @@ body {
     width: 100%;
     max-width: 550px;
 }
+/* project gallery */
+.projectContainer {
+    width: 100%;
+    margin-top: 3rem;
+}
+.projectContainer .projectTitle h2 {
+    font-size: 1.45rem;
+    margin-bottom: 15px;
+}
+#projectTitleSpan {
+    color: var(--primary100);
+}
+.projectContainer .projectImages {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+.projectContainer .projectImages img {
+    width: 100%;
+    transition: 0.25s all ease-in-out;
+    border-radius: 10px;
+}
 /* all media queries */
 @media (min-width: 375px) {
     .navNavigationHolder #navMenu {
@@ -254,6 +278,9 @@ body {
     .ctaContainer .ctaRight img {
         margin-top: 35px;
     }
+    .projectContainer .projectTitle h2 {
+        font-size: 1.7rem;
+    }
 }
 @media (min-width: 425px) {
     body {
@@ -272,6 +299,13 @@ body {
     }
     #email {
         margin-bottom: 0;
+    }
+}
+@media (min-width: 600px) {
+    .projectContainer .projectImages {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
     }
 }
 @media (min-width: 645px) {
@@ -356,6 +390,14 @@ body {
         text-align: end;
         margin: 0;
     }
+    .projectContainer .projectTitle h2 {
+        font-size: 1.6rem;
+    }
+    .projectContainer .projectImages {
+        gap: 25px;
+    }
+}
+@media (min-width: 850px) {
 }
 @media (min-width: 900px) {
     .heroContainer .heroLeft h1 {
@@ -369,6 +411,9 @@ body {
         padding: 1.25rem;
     }
     .ctaContainer .ctaLeft h2 {
+        font-size: 1.7rem;
+    }
+    .projectContainer .projectTitle h2 {
         font-size: 1.7rem;
     }
 }
@@ -422,6 +467,10 @@ body {
     .heroContainer .heroLeft div .heroBtn {
         font-size: 1.1rem;
     }
+    .projectContainer .projectImages img:hover {
+        transform: scale(1.02);
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    }
 }
 @media (min-width: 1200px) {
     .heroContainer .heroLeft h1 {
@@ -466,6 +515,13 @@ body {
     .ctaContainer .ctaLeft .ctaContact a {
         padding: 0.8rem 1.15rem;
     }
+    .projectContainer .projectTitle h2 {
+        font-size: 2rem;
+    }
+    .projectContainer .projectImages {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 15px;
+    }
 }
 @media (min-width: 1299px) {
     .reviewGrid .reviewCard {
@@ -499,6 +555,10 @@ body {
     }
     .ctaContainer .ctaLeft p {
         font-size: 1.05rem;
+    }
+    .projectContainer .projectImages {
+        gap: 25px;
+        margin-top: 1.5rem;
     }
 }
 @media (min-width: 1460px) {
