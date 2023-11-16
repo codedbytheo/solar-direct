@@ -180,6 +180,48 @@ body {
 #reviewTitleSpan {
     color: var(--primary100);
 }
+/* cta */
+.ctaContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 3rem;
+}
+.ctaContainer .ctaLeft h2 {
+    font-size: 1.45rem;
+    margin-bottom: 15px;
+}
+#ctaTitleSpan {
+    color: var(--primary100);
+}
+.ctaContainer .ctaLeft p {
+    margin-bottom: 30px;
+}
+.ctaContainer .ctaLeft .ctaContact a {
+    background-color: var(--primary100);
+    border-radius: 5px;
+    padding: 0.35rem 0.5rem;
+    color: var(--white);
+    transition: 0.15s all ease-in-out;
+}
+.ctaContainer .ctaLeft .ctaContact a:hover {
+    background-color: #1ca4ac;
+}
+.ctaContainer .ctaLeft .ctaContact a ion-icon {
+    font-size: 1.15rem;
+    transform: translateY(3px);
+    margin-right: 5px;
+    color: var(--white);
+}
+.ctaRight {
+    width: 100%;
+    text-align: center;
+    margin-top: 2rem;
+}
+.ctaRight img {
+    width: 100%;
+    max-width: 550px;
+}
 /* all media queries */
 @media (min-width: 375px) {
     .navNavigationHolder #navMenu {
@@ -202,6 +244,15 @@ body {
     }
     .reviewGrid .sectionTitle h2 {
         font-size: 1.7rem;
+    }
+    .ctaContainer .ctaLeft h2 {
+        font-size: 1.7rem;
+    }
+    .ctaContainer .ctaLeft .ctaContact a {
+        padding: 0.5rem 0.75rem;
+    }
+    .ctaContainer .ctaRight img {
+        margin-top: 35px;
     }
 }
 @media (min-width: 425px) {
@@ -263,9 +314,10 @@ body {
         font-size: 1.6rem;
     }
     .heroContainer .heroLeft p {
-        font-size: 0.9rem;
+        font-size: 1rem;
         margin-bottom: 25px;
         max-width: 400px;
+        text-align: justify;
     }
     .heroRight {
         width: 45%;
@@ -283,6 +335,27 @@ body {
     .reviewGrid .sectionTitle h2 {
         font-size: 1.6rem;
     }
+    .ctaContainer {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 2.25rem;
+    }
+    .ctaLeft {
+        width: 50%;
+        margin: 0;
+    }
+    .ctaContainer .ctaLeft h2 {
+        font-size: 1.6rem;
+    }
+    .ctaContainer .ctaLeft p {
+        text-align: justify;
+    }
+    .ctaRight {
+        width: 45%;
+        text-align: end;
+        margin: 0;
+    }
 }
 @media (min-width: 900px) {
     .heroContainer .heroLeft h1 {
@@ -294,6 +367,9 @@ body {
     }
     .reviewGrid .reviewCard {
         padding: 1.25rem;
+    }
+    .ctaContainer .ctaLeft h2 {
+        font-size: 1.7rem;
     }
 }
 @media (min-width: 1000px) {
@@ -381,6 +457,15 @@ body {
     .reviewGrid .reviewCard .customerReview p {
         text-align: justify;
     }
+    .ctaContainer .ctaLeft h2 {
+        font-size: 2rem;
+    }
+    .ctaContainer .ctaLeft p {
+        margin-bottom: 40px;
+    }
+    .ctaContainer .ctaLeft .ctaContact a {
+        padding: 0.8rem 1.15rem;
+    }
 }
 @media (min-width: 1299px) {
     .reviewGrid .reviewCard {
@@ -401,6 +486,9 @@ body {
     .reviewGrid .reviewCard {
         height: 410px;
     }
+    .ctaContainer .ctaLeft p {
+        max-width: 660px;
+    }
 }
 @media (min-width: 1440px) {
     .heroContainer .heroLeft p {
@@ -408,6 +496,9 @@ body {
     }
     .reviewGrid .reviewCard {
         height: 385px;
+    }
+    .ctaContainer .ctaLeft p {
+        font-size: 1.05rem;
     }
 }
 @media (min-width: 1460px) {
