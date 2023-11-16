@@ -17,7 +17,6 @@ html {
     margin: 0;
     padding: 0;
     font-family: "Poppins", sans-serif;
-    font-weight: 400;
     text-decoration: none;
     list-style: none;
 }
@@ -95,6 +94,47 @@ body {
 #whatsapp:hover {
     background-color: rgba(37, 211, 102, 0.55);
 }
+/* hero */
+.heroContainer {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+}
+.heroLeft {
+    margin-top: 1.5rem;
+}
+.heroLeft h1 {
+    font-size: 1.45rem;
+    margin-bottom: 15px;
+    max-width: 310px;
+}
+#heroTitleSpan {
+    color: var(--primary100);
+}
+.heroLeft p {
+    margin-bottom: 30px;
+}
+.heroLeft div .heroBtn {
+    background-color: var(--primary100);
+    border-radius: 5px;
+    font-weight: 600;
+    padding: 0.35rem 0.5rem;
+    color: var(--white);
+    transition: 0.15s all ease-in-out;
+}
+.heroLeft div a:hover {
+    background-color: #1ca4ac;
+}
+.heroRight {
+    width: 100%;
+    text-align: center;
+}
+.heroRight img {
+    width: 100%;
+    max-width: 550px;
+}
 /* all media queries */
 @media (min-width: 375px) {
     .navNavigationHolder #navMenu {
@@ -105,6 +145,16 @@ body {
         margin-left: 5px;
         transform: translate(0px, 3px);
         font-size: 1.2rem;
+    }
+    .heroContainer .heroLeft h1 {
+        font-size: 1.7rem;
+    }
+    .heroContainer .heroLeft p {
+        font-size: 1rem;
+        margin-bottom: 35px;
+    }
+    .heroContainer .heroLeft div .heroBtn {
+        padding: 0.5rem 0.75rem;
     }
 }
 @media (min-width: 425px) {
@@ -137,6 +187,35 @@ body {
     #navMenu ion-icon {
         font-size: 1.25rem;
         transform: translate(0px 2px);
+    }
+}
+@media (min-width: 768px) {
+    .heroContainer {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .heroLeft {
+        width: 50%;
+        margin: 0;
+    }
+    .heroContainer .heroLeft h1 {
+        font-size: 1.6rem;
+    }
+    .heroContainer .heroLeft p {
+        font-size: 0.9rem;
+        margin-bottom: 25px;
+        max-width: 400px;
+    }
+    .heroRight {
+        width: 45%;
+        text-align: end;
+    }
+}
+@media (min-width: 900px) {
+    .heroContainer .heroLeft h1 {
+        font-size: 1.7rem;
+        max-width: 310px;
     }
 }
 @media (min-width: 1000px) {
@@ -178,5 +257,42 @@ body {
         font-size: 1.2rem;
         margin-left: 5px;
         transform: translateY(3.25px);
+    }
+    .heroContainer {
+        margin-top: 2.25rem;
+    }
+    .heroContainer .heroLeft p {
+        max-width: 500px;
+        font-size: 1rem;
+        margin-bottom: 40px;
+    }
+}
+@media (min-width: 1200px) {
+    .heroContainer .heroLeft h1 {
+        font-size: 2rem;
+        max-width: 360px;
+    }
+    .heroContainer .heroLeft p {
+        margin-bottom: 40px;
+    }
+    .heroContainer .heroLeft div .heroBtn {
+        padding: 0.8rem 1.15rem;
+    }
+}
+@media (min-width: 1340px) {
+    .heroContainer {
+        margin-top: 3rem;
+    }
+    .heroContainer .heroLeft h1 {
+        margin-bottom: 25px;
+    }
+    .heroContainer .heroLeft p {
+        max-width: 660px;
+        margin-bottom: 45px;
+    }
+}
+@media (min-width: 1440px) {
+    .heroContainer .heroLeft p {
+        font-size: 1.05rem;
     }
 }
