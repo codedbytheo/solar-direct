@@ -364,6 +364,33 @@ label {
     font-weight: 600;
     letter-spacing: 1px;
 }
+/* submission page */
+.submittedContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.submittedContainer .submittedImage {
+    width: 100%;
+}
+.submittedImage img {
+    width: 100%;
+    max-width: 200px;
+    margin-bottom: 15px;
+}
+.submittedContainer > div > p {
+    margin-bottom: 30px;
+    max-width: 450px;
+}
+.submittedContainer > div > a {
+    padding: 0.5rem 0.75rem;
+    background-color: var(--primary100);
+    border-radius: 5px;
+    color: var(--white);
+    letter-spacing: 1px;
+    font-weight: 600;
+}
 /* all media queries */
 @media (min-width: 375px) {
     .navNavigationHolder #navMenu {

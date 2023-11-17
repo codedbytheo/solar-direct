@@ -126,7 +126,7 @@
             <h1>Service <span id="inquirySpan">inquiries</span>.</h1>
             <section class="formContainer">
                 <form
-                    action="https://formsubmit.co/b6dd459bd1cd2cc5b4d00a60cc962113"
+                    action="https://formsubmit.co/quotes@solar-direct.co.za"
                     method="post">
                     <div class="frmNameSurnameEmail">
                         <div class="frmNameSurname">
@@ -138,8 +138,9 @@
                             <div>
                                 <input
                                     type="text"
-                                    name="clientNameSurname"
-                                    id="clientNameSurname" />
+                                    name="name & surname"
+                                    id="clientNameSurname"
+                                    required />
                             </div>
                         </div>
                         <div class="frmEmail">
@@ -150,7 +151,8 @@
                                 <input
                                     type="email"
                                     name="email"
-                                    id="clientEmail" />
+                                    id="clientEmail"
+                                    required />
                             </div>
                         </div>
                     </div>
@@ -164,8 +166,10 @@
                             <div>
                                 <input
                                     type="tel"
-                                    name="clientCellphoneNumber"
-                                    id="clientCellphoneNumber" />
+                                    name="cellphone number"
+                                    id="clientCellphoneNumber"
+                                    required
+                                    maxlength="10" />
                             </div>
                         </div>
                         <div class="frmResAddress">
@@ -175,8 +179,9 @@
                                 </div>
                                 <div>
                                     <select
-                                        name="clientLotType"
-                                        id="clientLotType">
+                                        name="lot type"
+                                        id="clientLotType"
+                                        required>
                                         <option value="">
                                             Select your lot type...
                                         </option>
@@ -198,8 +203,9 @@
                                 <div>
                                     <input
                                         type="text"
-                                        name="clientAddress"
-                                        id="clientAddress" />
+                                        name="address"
+                                        id="clientAddress"
+                                        required />
                                 </div>
                             </div>
                         </div>
@@ -214,8 +220,9 @@
                                 </div>
                                 <div>
                                     <select
-                                        name="roofDirection"
-                                        id="roofDirection">
+                                        name="roof direction"
+                                        id="roofDirection"
+                                        required>
                                         <option value="">
                                             The roof faces approximately...
                                         </option>
@@ -238,8 +245,9 @@
                                 <div>
                                     <input
                                         type="number"
-                                        name="roofAngle"
-                                        id="roofAngle" />
+                                        name="roof angle"
+                                        id="roofAngle"
+                                        required />
                                 </div>
                             </div>
                         </div>
@@ -253,8 +261,9 @@
                                 <div>
                                     <input
                                         type="number"
-                                        name="totalResidents"
-                                        id="totalResidents" />
+                                        name="total residents"
+                                        id="totalResidents"
+                                        required />
                                 </div>
                             </div>
                             <div class="frmUsageSched">
@@ -263,18 +272,19 @@
                                 </div>
                                 <div>
                                     <select
-                                        name="usageSchedule"
-                                        id="usageSchedule">
+                                        name="usage schedule"
+                                        id="usageSchedule"
+                                        required>
                                         <option value="">
                                             Power is used mostly during...
                                         </option>
-                                        <option value="frequentDay-time">
+                                        <option value="Day Time Usage">
                                             Day-time
                                         </option>
-                                        <option value="frequentNight-time">
+                                        <option value="Night Time Usage">
                                             Night-time
                                         </option>
-                                        <option value="balancedThroughout">
+                                        <option value="Balanced Usage">
                                             Balanced
                                         </option>
                                     </select>
@@ -288,7 +298,7 @@
                             <div>
                                 <input
                                     type="radio"
-                                    name="paymentType"
+                                    name="payment type"
                                     id="cashPayment"
                                     value="Cash" />
                                 <label for="cashPayment">Cash</label>
@@ -296,15 +306,12 @@
                             <div>
                                 <input
                                     type="radio"
-                                    name="paymentType"
+                                    name="payment type"
                                     id="financePayment"
                                     value="Finance" />
                                 <label for="financePayment">Finance</label>
                             </div>
                         </div>
-                    </div>
-                    <div class="submitBtn">
-                        <button type="submit">Send Inquiry</button>
                     </div>
                     <!-- hidden form setups -->
                     <input
@@ -315,6 +322,13 @@
                         type="hidden"
                         name="_autoresponse"
                         value="Thank you for reaching out to the Solar-Direct team. We appreciate your inquiry. To expedite the processing of your request, we kindly request that you respond to this email by attaching clear images of both your DB box and Roof. Once we have received the necessary documentation, you can expect to be contacted within 24 hours." />
+                    <input
+                        type="hidden"
+                        name="_next"
+                        value="https://solar-direct.co.za/submitted.html" />
+                    <div class="submitBtn">
+                        <button type="submit">Send Inquiry</button>
+                    </div>
                 </form>
             </section>
         </main>
