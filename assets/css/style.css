@@ -5,6 +5,7 @@
     --background100: #fcfcfc;
     --background200: #ccc;
     --text100: #333;
+    --text200: #5a5a5a;
     --primary100: #0cd4df;
     --secondary100: #1333f1;
 }
@@ -24,7 +25,7 @@ body {
     background-color: var(--background100);
     max-width: 1440px;
     margin: 0 auto;
-    padding: 1.25rem 1rem;
+    padding: 1.25rem 1rem 0rem;
 }
 /* mobile nav */
 .desktopNav {
@@ -298,6 +299,71 @@ footer .footerSupp p {
     color: var(--white);
     transform: translate(4.5px, 4px);
 }
+/* form page */
+.formMain {
+    margin-top: 2rem;
+}
+.formMain > h1 {
+    font-size: 1.45rem;
+}
+#inquirySpan {
+    color: var(--primary100);
+}
+.formContainer {
+    margin-top: 15px;
+    background-color: rgba(243, 243, 243, 0.7);
+    border-radius: 10px;
+    padding: 1rem;
+}
+label {
+    font-size: 0.9rem;
+    color: var(--text200);
+}
+#clientNameSurname,
+#clientEmail,
+#clientCellphoneNumber,
+#clientAddress,
+#roofAngle,
+#totalResidents {
+    width: 97.5%;
+    height: 30px;
+    margin: 5px 0px 10px;
+    padding: 0px 5px;
+    background-color: var(--background100);
+    border: none;
+    border-bottom: 1.5px solid var(--secondary100);
+}
+#clientLotType,
+#roofDirection,
+#usageSchedule {
+    width: 99%;
+    height: 30px;
+    margin: 5px 0px 10px;
+    padding: 0px 5px;
+    background-color: var(--background100);
+    border: none;
+    border-bottom: 1.5px solid var(--secondary100);
+}
+.frmPaymentType legend {
+    margin-bottom: 5px;
+}
+.frmPaymentType div input {
+    margin-bottom: 10px;
+    transform: translateY(2.5px);
+}
+.submitBtn {
+    text-align: right;
+}
+.submitBtn button {
+    border: none;
+    background-color: var(--primary100);
+    color: var(--white);
+    margin-top: 10px;
+    padding: 0.35rem 0.5rem;
+    border-radius: 5px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
 /* all media queries */
 @media (min-width: 375px) {
     .navNavigationHolder #navMenu {
@@ -346,10 +412,34 @@ footer .footerSupp p {
         font-size: 2rem;
         transform: translate(5.5px, 4.5px);
     }
+    .formMain > h1 {
+        font-size: 1.7rem;
+    }
+    label {
+        font-size: 1rem;
+    }
+    #clientNameSurname,
+    #clientEmail,
+    #clientCellphoneNumber,
+    #clientAddress,
+    #roofAngle,
+    #totalResidents {
+        height: 35px;
+        margin: 5px 0px 12.5px;
+    }
+    #clientLotType,
+    #roofDirection,
+    #usageSchedule {
+        height: 35px;
+        margin: 5px 0px 12.5px;
+    }
+    .submitBtn button {
+        padding: 0.5rem 0.7rem;
+    }
 }
 @media (min-width: 425px) {
     body {
-        padding: 1.25rem;
+        padding: 1.25rem 1.25rem 0rem;
     }
     footer .footerSupp p {
         padding: 0px 50px 15px;
@@ -518,6 +608,9 @@ footer .footerSupp p {
         font-size: 0.9rem;
         max-width: 215px;
     }
+    .formMain > h1 {
+        font-size: 1.6rem;
+    }
 }
 @media (min-width: 900px) {
     .heroContainer .heroLeft h1 {
@@ -538,6 +631,9 @@ footer .footerSupp p {
     }
     footer {
         padding: 2rem 3rem;
+    }
+    .formMain > h1 {
+        font-size: 1.7rem;
     }
 }
 @media (min-width: 1000px) {
@@ -600,6 +696,75 @@ footer .footerSupp p {
     footer .footerSupp p {
         font-size: 1rem;
         max-width: 240px;
+    }
+    .formMain {
+        margin-top: 4rem;
+    }
+    .formContainer {
+        padding: 1.5rem;
+    }
+    .frmNameSurnameEmail,
+    .frmCellResAddress,
+    .frmResAddress,
+    .frmRoofStats,
+    .frmHouseStats,
+    .frmRoofHouseStats {
+        display: flex;
+        justify-content: space-between;
+    }
+    .frmNameSurname,
+    .frmEmail,
+    .frmCell,
+    .frmResAddress,
+    .frmRoofStats,
+    .frmHouseStats {
+        width: 48%;
+    }
+    .paymentContainer {
+        display: flex;
+        gap: 20px;
+    }
+    #clientNameSurname,
+    #clientEmail,
+    #clientCellphoneNumber,
+    #clientAddress,
+    #roofAngle,
+    #totalResidents {
+        height: 40px;
+        margin: 5px 0px 35px;
+    }
+    #clientLotType,
+    #roofDirection,
+    #usageSchedule {
+        height: 40px;
+        margin: 5px 0px 35px;
+    }
+    .frmLotType {
+        width: 41%;
+    }
+    .frmAddress {
+        width: 57%;
+    }
+    .frmRoofStats {
+        flex-direction: row-reverse;
+    }
+    .frmRoofAngle {
+        width: 39.5%;
+    }
+    .frmRoofDirection {
+        width: 57%;
+    }
+    .frmHouseSize {
+        width: 39.5%;
+    }
+    .frmUsageSched {
+        width: 57%;
+    }
+    .frmPaymentType legend {
+        margin-bottom: 10px;
+    }
+    .submitBtn button {
+        font-size: 1.1rem;
     }
 }
 @media (min-width: 1200px) {

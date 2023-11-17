@@ -122,6 +122,229 @@
             </div>
         </nav>
 
+        <main class="formMain">
+            <h1>Service <span id="inquirySpan">inquiries</span>.</h1>
+            <section class="formContainer">
+                <form
+                    action="https://formsubmit.co/b6dd459bd1cd2cc5b4d00a60cc962113"
+                    method="post">
+                    <div class="frmNameSurnameEmail">
+                        <div class="frmNameSurname">
+                            <div>
+                                <label for="clientNameSurname"
+                                    >Name & Surname</label
+                                >
+                            </div>
+                            <div>
+                                <input
+                                    type="text"
+                                    name="clientNameSurname"
+                                    id="clientNameSurname" />
+                            </div>
+                        </div>
+                        <div class="frmEmail">
+                            <div>
+                                <label for="clientEmail">Email Address</label>
+                            </div>
+                            <div>
+                                <input
+                                    type="email"
+                                    name="email"
+                                    id="clientEmail" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="frmCellResAddress">
+                        <div class="frmCell">
+                            <div>
+                                <label for="clientCellphoneNumber"
+                                    >Cellphone Number</label
+                                >
+                            </div>
+                            <div>
+                                <input
+                                    type="tel"
+                                    name="clientCellphoneNumber"
+                                    id="clientCellphoneNumber" />
+                            </div>
+                        </div>
+                        <div class="frmResAddress">
+                            <div class="frmLotType">
+                                <div>
+                                    <label for="clientLotType">Lot Type</label>
+                                </div>
+                                <div>
+                                    <select
+                                        name="clientLotType"
+                                        id="clientLotType">
+                                        <option value="">
+                                            Select your lot type...
+                                        </option>
+                                        <option value="freestandingLot">
+                                            Freestanding
+                                        </option>
+                                        <option value="complexLot">
+                                            Complex
+                                        </option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="frmAddress">
+                                <div>
+                                    <label for="clientAddress"
+                                        >Residential Address</label
+                                    >
+                                </div>
+                                <div>
+                                    <input
+                                        type="text"
+                                        name="clientAddress"
+                                        id="clientAddress" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="frmRoofHouseStats">
+                        <div class="frmRoofStats">
+                            <div class="frmRoofDirection">
+                                <div>
+                                    <label for="roofDirection"
+                                        >Roof Direction</label
+                                    >
+                                </div>
+                                <div>
+                                    <select
+                                        name="roofDirection"
+                                        id="roofDirection">
+                                        <option value="">
+                                            The roof faces approximately...
+                                        </option>
+                                        <option value="North">North</option>
+                                        <option value="East">East</option>
+                                        <option value="South">South</option>
+                                        <option value="West">West</option>
+                                        <option value="Uncertain">
+                                            Uncertain
+                                        </option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="frmRoofAngle">
+                                <div>
+                                    <label for="roofAngle"
+                                        >Roof Angle (Degree&#176;)</label
+                                    >
+                                </div>
+                                <div>
+                                    <input
+                                        type="number"
+                                        name="roofAngle"
+                                        id="roofAngle" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="frmHouseStats">
+                            <div class="frmHouseSize">
+                                <div>
+                                    <label for="totalResidents"
+                                        >Total Residents</label
+                                    >
+                                </div>
+                                <div>
+                                    <input
+                                        type="number"
+                                        name="totalResidents"
+                                        id="totalResidents" />
+                                </div>
+                            </div>
+                            <div class="frmUsageSched">
+                                <div>
+                                    <label for="">Usage Schedule</label>
+                                </div>
+                                <div>
+                                    <select
+                                        name="usageSchedule"
+                                        id="usageSchedule">
+                                        <option value="">
+                                            Power is used mostly during...
+                                        </option>
+                                        <option value="frequentDay-time">
+                                            Day-time
+                                        </option>
+                                        <option value="frequentNight-time">
+                                            Night-time
+                                        </option>
+                                        <option value="balancedThroughout">
+                                            Balanced
+                                        </option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="frmPaymentType">
+                        <legend>Select a payment type:</legend>
+                        <div class="paymentContainer">
+                            <div>
+                                <input
+                                    type="radio"
+                                    name="paymentType"
+                                    id="cashPayment"
+                                    value="Cash" />
+                                <label for="cashPayment">Cash</label>
+                            </div>
+                            <div>
+                                <input
+                                    type="radio"
+                                    name="paymentType"
+                                    id="financePayment"
+                                    value="Finance" />
+                                <label for="financePayment">Finance</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="submitBtn">
+                        <button type="submit">Send Inquiry</button>
+                    </div>
+                    <!-- hidden form setups -->
+                    <input
+                        type="hidden"
+                        name="_template"
+                        value="box" />
+                    <input
+                        type="hidden"
+                        name="_autoresponse"
+                        value="Thank you for reaching out to the Solar-Direct team. We appreciate your inquiry. To expedite the processing of your request, we kindly request that you respond to this email by attaching clear images of both your DB box and Roof. Once we have received the necessary documentation, you can expect to be contacted within 24 hours." />
+                </form>
+            </section>
+        </main>
+
+        <footer>
+            <div class="footerNav">
+                <ul>
+                    <li>
+                        <a href="../index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="https://wa.me/message/MVENUSSXAVILH1"
+                            >WhatsApp</a
+                        >
+                    </li>
+                </ul>
+            </div>
+            <div class="footerSupp">
+                <img
+                    src="../assets/images/supplier24Logo.png"
+                    alt="Supplier 24's company logo." />
+                <p>
+                    <small>
+                        Solar-Direct partners with Supplier 24 to deliver top
+                        quality solar solutions.</small
+                    >
+                </p>
+            </div>
+        </footer>
+
         <!-- js link -->
         <script src="../assets/js/app.js"></script>
     </body>
