@@ -1,0 +1,894 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap");
+
+:root {
+    --white: #fff;
+    --background100: #fcfcfc;
+    --background200: #ccc;
+    --text100: #333;
+    --text200: #5a5a5a;
+    --primary100: #0cd4df;
+    --secondary100: #1333f1;
+}
+html {
+    font-size: 15px;
+    scroll-behavior: smooth;
+}
+* {
+    color: var(--text100);
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+body {
+    background-color: var(--background100);
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 1.25rem 1rem 0rem;
+}
+/* mobile nav */
+.desktopNav {
+    display: none;
+}
+.navContainer {
+    width: 100%;
+}
+.mobileNav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navLogoHolder {
+    width: 180px;
+}
+.navLogoHolder img {
+    width: 100%;
+}
+.navNavigationHolder #navMenu {
+    background-color: var(--primary100);
+    color: var(--white);
+    padding: 8px 5px;
+    border-radius: 5px;
+    transition: 0.15s all ease-in-out;
+}
+#navMenu ion-icon {
+    transform: translate(0.5px, 8.25px);
+    color: var(--white);
+    font-size: 1.85rem;
+}
+/* mobile click menu */
+.mobileMenu {
+    display: none;
+}
+.mobileMenu.active {
+    display: block;
+}
+.mobileMenu {
+    margin-top: 0.5rem;
+}
+.menuList {
+    text-align: center;
+}
+.listItemHolder {
+    font-size: 1rem;
+    padding: 0.5rem 0rem;
+    border-radius: 5px;
+    transition: 0.1s all ease-in-out;
+}
+.listItemHolder ion-icon {
+    margin-left: 5px;
+    transform: translate(0px, 2.5px);
+}
+#email {
+    background-color: rgba(204, 204, 204, 0.25);
+    margin-bottom: 0.5rem;
+    transition: 0.15s all ease-in-out;
+}
+#email:hover {
+    background-color: rgba(204, 204, 204, 0.75);
+}
+#whatsapp {
+    background-color: rgba(37, 211, 102, 0.25);
+    transition: 0.15s all ease-in-out;
+}
+#whatsapp:hover {
+    background-color: rgba(37, 211, 102, 0.55);
+}
+/* hero */
+.heroContainer {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+}
+.heroLeft {
+    margin-top: 1.5rem;
+}
+.heroLeft h1 {
+    font-size: 1.45rem;
+    margin-bottom: 15px;
+    max-width: 310px;
+}
+#heroTitleSpan {
+    color: var(--primary100);
+}
+.heroLeft p {
+    margin-bottom: 30px;
+}
+.heroLeft div .heroBtn {
+    background-color: var(--primary100);
+    border-radius: 5px;
+    font-weight: 600;
+    padding: 0.35rem 0.5rem;
+    color: var(--white);
+    transition: 0.15s all ease-in-out;
+}
+.heroLeft div a:hover {
+    background-color: #1ca4ac;
+}
+.heroRight {
+    width: 100%;
+    text-align: center;
+}
+.heroRight img {
+    width: 100%;
+    max-width: 550px;
+}
+/* client reviews */
+.reviewGrid {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 25px;
+    margin-top: 3rem;
+}
+.reviewGrid .reviewCard {
+    background-color: rgba(243, 243, 243, 0.7);
+    padding: 1rem;
+    border-radius: 10px;
+}
+.reviewGrid .reviewCard .customerProfile {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.reviewGrid .reviewCard .customerProfile ion-icon {
+    font-size: 1.8rem;
+    background-color: var(--secondary100);
+    color: var(--white);
+    padding: 7.5px;
+    border-radius: 5px;
+}
+.reviewGrid .reviewCard .customerProfile .customerDetails p {
+    font-size: 1rem;
+}
+.reviewGrid .reviewCard .customerProfile .customerDetails p b {
+    font-size: 0.9rem;
+}
+.reviewGrid .reviewCard .customerReview {
+    margin-top: 20px;
+}
+.reviewGrid .reviewCard .customerReview p {
+    font-size: 0.9rem;
+    text-align: justify;
+}
+.reviewGrid .sectionTitle h2 {
+    margin-bottom: 15px;
+    font-size: 1.45rem;
+}
+#reviewTitleSpan {
+    color: var(--primary100);
+}
+/* cta */
+.ctaContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 3rem;
+}
+.ctaContainer .ctaLeft h2 {
+    font-size: 1.45rem;
+    margin-bottom: 15px;
+}
+#ctaTitleSpan {
+    color: var(--primary100);
+}
+.ctaContainer .ctaLeft p {
+    margin-bottom: 30px;
+}
+.ctaContainer .ctaLeft .ctaContact a {
+    background-color: var(--primary100);
+    border-radius: 5px;
+    padding: 0.35rem 0.5rem;
+    color: var(--white);
+    transition: 0.15s all ease-in-out;
+}
+.ctaContainer .ctaLeft .ctaContact a:hover {
+    background-color: #1ca4ac;
+}
+.ctaContainer .ctaLeft .ctaContact a ion-icon {
+    font-size: 1.15rem;
+    transform: translateY(3px);
+    margin-right: 5px;
+    color: var(--white);
+}
+.ctaRight {
+    width: 100%;
+    text-align: center;
+    margin-top: 2rem;
+}
+.ctaRight img {
+    width: 100%;
+    max-width: 550px;
+}
+/* project gallery */
+.projectContainer {
+    width: 100%;
+    margin-top: 3rem;
+}
+.projectContainer .projectTitle h2 {
+    font-size: 1.45rem;
+    margin-bottom: 15px;
+}
+#projectTitleSpan {
+    color: var(--primary100);
+}
+.projectContainer .projectImages {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+.projectContainer .projectImages img {
+    width: 100%;
+    transition: 0.25s all ease-in-out;
+    border-radius: 10px;
+}
+/* footer */
+footer {
+    background-color: rgba(243, 243, 243, 0.7);
+    margin-top: 3rem;
+    border-radius: 10px 10px 0px 0px;
+}
+footer .footerNav {
+    text-align: center;
+    padding-top: 20px;
+}
+footer .footerNav ul {
+    margin-bottom: 15px;
+}
+footer .footerNav ul li {
+    margin-bottom: 5px;
+}
+footer .footerNav ul li a {
+    color: var(--text200);
+    padding-bottom: 0.1rem;
+}
+footer .footerNav ul li a:hover {
+    border-bottom: 1.5px solid var(--secondary100);
+}
+footer .footerSupp {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+}
+footer .footerSupp img {
+    width: 80%;
+    margin: 0 auto;
+    max-width: 320px;
+    margin-bottom: 10px;
+}
+footer .footerSupp p {
+    padding: 0px 20px 15px;
+}
+/* floating whatsapp button */
+.floatingWhatsapp {
+    background-color: #25d366;
+    border-radius: 5px;
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    width: 35px;
+    height: 35px;
+}
+.floatingWhatsapp > ion-icon {
+    font-size: 1.75rem;
+    color: var(--white);
+    transform: translate(4.5px, 4px);
+}
+/* form page */
+.formMain {
+    margin-top: 2rem;
+}
+.formMain > h1 {
+    font-size: 1.45rem;
+}
+#inquirySpan {
+    color: var(--primary100);
+}
+.formContainer {
+    margin-top: 15px;
+    background-color: rgba(243, 243, 243, 0.7);
+    border-radius: 10px;
+    padding: 1rem;
+}
+label {
+    font-size: 0.9rem;
+    color: var(--text200);
+}
+#clientNameSurname,
+#clientEmail,
+#clientCellphoneNumber,
+#clientAddress,
+#roofAngle,
+#totalResidents {
+    width: 97.5%;
+    height: 30px;
+    margin: 5px 0px 10px;
+    padding: 0px 5px;
+    background-color: var(--background100);
+    border: none;
+    border-bottom: 1.5px solid var(--secondary100);
+}
+#clientLotType,
+#roofDirection,
+#usageSchedule {
+    width: 99%;
+    height: 30px;
+    margin: 5px 0px 10px;
+    padding: 0px 5px;
+    background-color: var(--background100);
+    border: none;
+    border-bottom: 1.5px solid var(--secondary100);
+}
+.frmPaymentType legend {
+    margin-bottom: 5px;
+}
+.frmPaymentType div input {
+    margin-bottom: 10px;
+    transform: translateY(2.5px);
+}
+.submitBtn {
+    text-align: right;
+}
+.submitBtn button {
+    border: none;
+    background-color: var(--primary100);
+    color: var(--white);
+    margin-top: 10px;
+    padding: 0.35rem 0.5rem;
+    border-radius: 5px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+/* submission page */
+.submittedContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.submittedContainer .submittedImage {
+    width: 100%;
+}
+.submittedImage img {
+    width: 100%;
+    max-width: 200px;
+    margin-bottom: 15px;
+}
+.submittedContainer > div > p {
+    margin-bottom: 30px;
+    max-width: 450px;
+}
+.submittedContainer > div > a {
+    padding: 0.5rem 0.75rem;
+    background-color: var(--primary100);
+    border-radius: 5px;
+    color: var(--white);
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+/* all media queries */
+@media (min-width: 375px) {
+    .navNavigationHolder #navMenu {
+        letter-spacing: 1px;
+        padding: 8px 10px;
+    }
+    #navMenu ion-icon {
+        margin-left: 5px;
+        transform: translate(0px, 3px);
+        font-size: 1.2rem;
+    }
+    .heroContainer .heroLeft h1 {
+        font-size: 1.7rem;
+    }
+    .heroContainer .heroLeft p {
+        margin-bottom: 35px;
+    }
+    .heroContainer .heroLeft div .heroBtn {
+        padding: 0.5rem 0.75rem;
+    }
+    .reviewGrid .sectionTitle h2 {
+        font-size: 1.7rem;
+    }
+    .ctaContainer .ctaLeft h2 {
+        font-size: 1.7rem;
+    }
+    .ctaContainer .ctaLeft .ctaContact a {
+        padding: 0.5rem 0.75rem;
+    }
+    .ctaContainer .ctaRight img {
+        margin-top: 35px;
+    }
+    .projectContainer .projectTitle h2 {
+        font-size: 1.7rem;
+    }
+    footer .footerSupp p {
+        padding: 0px 30px 15px;
+    }
+    .floatingWhatsapp {
+        bottom: 30px;
+        right: 30px;
+        width: 40px;
+        height: 40px;
+    }
+    .floatingWhatsapp > ion-icon {
+        font-size: 2rem;
+        transform: translate(5.5px, 4.5px);
+    }
+    .formMain > h1 {
+        font-size: 1.7rem;
+    }
+    label {
+        font-size: 1rem;
+    }
+    #clientNameSurname,
+    #clientEmail,
+    #clientCellphoneNumber,
+    #clientAddress,
+    #roofAngle,
+    #totalResidents {
+        height: 35px;
+        margin: 5px 0px 12.5px;
+    }
+    #clientLotType,
+    #roofDirection,
+    #usageSchedule {
+        height: 35px;
+        margin: 5px 0px 12.5px;
+    }
+    .submitBtn button {
+        padding: 0.5rem 0.7rem;
+    }
+}
+@media (min-width: 425px) {
+    body {
+        padding: 1.25rem 1.25rem 0rem;
+    }
+    footer .footerSupp p {
+        padding: 0px 50px 15px;
+    }
+}
+@media (min-width: 550px) {
+    .menuList {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 15px;
+    }
+    .listItemHolder {
+        width: 50%;
+    }
+    #email {
+        margin-bottom: 0;
+    }
+    footer .footerSupp p {
+        padding: 0px 140px 15px;
+    }
+}
+@media (min-width: 600px) {
+    .projectContainer .projectImages {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+    }
+    footer {
+        padding: 2rem 2rem 1rem;
+        margin-top: 4rem;
+    }
+    footer .footerNav {
+        padding: 0;
+    }
+    footer .footerNav ul {
+        display: flex;
+        justify-content: space-evenly;
+    }
+    footer .footerNav ul li {
+        margin: 0;
+    }
+    footer .footerSupp {
+        margin-top: 30px;
+    }
+    footer .footerSupp img {
+        margin-bottom: 10px;
+    }
+    footer .footerSupp p {
+        padding: 0;
+    }
+}
+@media (min-width: 645px) {
+    .reviewGrid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .sectionTitle {
+        grid-area: 1;
+        align-self: baseline;
+    }
+    .cardOne {
+        grid-area: 2;
+    }
+}
+@media (min-width: 730px) {
+    .navLogoHolder {
+        width: 200px;
+    }
+    .navNavigationHolder #navMenu {
+        padding: 10px 13px;
+        font-size: 1rem;
+    }
+    #navMenu ion-icon {
+        font-size: 1.25rem;
+        transform: translate(0px 2px);
+    }
+}
+@media (min-width: 768px) {
+    .heroContainer {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .heroLeft {
+        width: 50%;
+        margin: 0;
+    }
+    .heroContainer .heroLeft h1 {
+        font-size: 1.6rem;
+    }
+    .heroContainer .heroLeft p {
+        font-size: 1rem;
+        margin-bottom: 25px;
+        max-width: 400px;
+        text-align: justify;
+    }
+    .heroRight {
+        width: 45%;
+        text-align: end;
+    }
+    .reviewGrid {
+        margin-top: 4rem;
+    }
+    .reviewGrid .reviewCard {
+        padding: 1.15rem;
+    }
+    .reviewGrid .reviewCard .customerProfile .customerDetails p b {
+        font-size: 1rem;
+    }
+    .reviewGrid .sectionTitle h2 {
+        font-size: 1.6rem;
+    }
+    .ctaContainer {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 2.25rem;
+    }
+    .ctaLeft {
+        width: 50%;
+        margin: 0;
+    }
+    .ctaContainer .ctaLeft h2 {
+        font-size: 1.6rem;
+    }
+    .ctaContainer .ctaLeft p {
+        text-align: justify;
+    }
+    .ctaRight {
+        width: 45%;
+        text-align: end;
+        margin: 0;
+    }
+    .projectContainer .projectTitle h2 {
+        font-size: 1.6rem;
+    }
+    .projectContainer .projectImages {
+        gap: 25px;
+    }
+    footer {
+        display: flex;
+        flex-direction: row-reverse;
+        padding: 1rem 2rem;
+        align-items: center;
+        margin-top: 4.5rem;
+    }
+    footer .footerNav {
+        width: 50%;
+        text-align: end;
+        padding: 0;
+    }
+    footer .footerNav ul li {
+        margin: 0;
+    }
+    footer .footerSupp {
+        width: 50%;
+        text-align: left;
+        margin: 0;
+    }
+    footer .footerSupp img {
+        max-width: 250px;
+    }
+    footer .footerSupp p {
+        padding: 0;
+        font-size: 0.9rem;
+        max-width: 215px;
+    }
+    .formMain > h1 {
+        font-size: 1.6rem;
+    }
+}
+@media (min-width: 900px) {
+    .heroContainer .heroLeft h1 {
+        font-size: 1.7rem;
+        max-width: 310px;
+    }
+    .reviewGrid .sectionTitle h2 {
+        font-size: 1.7rem;
+    }
+    .reviewGrid .reviewCard {
+        padding: 1.25rem;
+    }
+    .ctaContainer .ctaLeft h2 {
+        font-size: 1.7rem;
+    }
+    .projectContainer .projectTitle h2 {
+        font-size: 1.7rem;
+    }
+    footer {
+        padding: 2rem 3rem;
+    }
+    .formMain > h1 {
+        font-size: 1.7rem;
+    }
+}
+@media (min-width: 1000px) {
+    .mobileNav {
+        display: none;
+    }
+    .mobileMenu {
+        display: none;
+    }
+    .mobileMenu.active {
+        display: none;
+    }
+    .desktopNav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .navLogo {
+        width: 200px;
+    }
+    .navLogo img {
+        max-width: 100%;
+    }
+    .navLinks .navLinkList {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+    }
+    .navLinkList .navLink {
+        padding: 7px 15px;
+        border-radius: 5px;
+    }
+    .navLink a {
+        font-size: 1.1rem;
+        letter-spacing: 1px;
+    }
+    .navLink ion-icon {
+        font-size: 1.2rem;
+        margin-left: 5px;
+        transform: translateY(3.25px);
+    }
+    .heroContainer {
+        margin-top: 2.25rem;
+    }
+    .heroContainer .heroLeft p {
+        max-width: 500px;
+        font-size: 1rem;
+        margin-bottom: 40px;
+    }
+    .heroContainer .heroLeft div .heroBtn {
+        font-size: 1.1rem;
+    }
+    .projectContainer .projectImages img:hover {
+        transform: scale(1.02);
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    }
+    footer {
+        margin-top: 5rem;
+    }
+    footer .footerSupp p {
+        font-size: 1rem;
+        max-width: 240px;
+    }
+    .formMain {
+        margin-top: 4rem;
+    }
+    .formContainer {
+        padding: 1.5rem;
+    }
+    .frmNameSurnameEmail,
+    .frmCellResAddress,
+    .frmResAddress,
+    .frmRoofStats,
+    .frmHouseStats,
+    .frmRoofHouseStats {
+        display: flex;
+        justify-content: space-between;
+    }
+    .frmNameSurname,
+    .frmEmail,
+    .frmCell,
+    .frmResAddress,
+    .frmRoofStats,
+    .frmHouseStats {
+        width: 48%;
+    }
+    .paymentContainer {
+        display: flex;
+        gap: 20px;
+    }
+    #clientNameSurname,
+    #clientEmail,
+    #clientCellphoneNumber,
+    #clientAddress,
+    #roofAngle,
+    #totalResidents {
+        height: 40px;
+        margin: 5px 0px 35px;
+    }
+    #clientLotType,
+    #roofDirection,
+    #usageSchedule {
+        height: 40px;
+        margin: 5px 0px 35px;
+    }
+    .frmLotType {
+        width: 41%;
+    }
+    .frmAddress {
+        width: 57%;
+    }
+    .frmRoofStats {
+        flex-direction: row-reverse;
+    }
+    .frmRoofAngle {
+        width: 39.5%;
+    }
+    .frmRoofDirection {
+        width: 57%;
+    }
+    .frmHouseSize {
+        width: 39.5%;
+    }
+    .frmUsageSched {
+        width: 57%;
+    }
+    .frmPaymentType legend {
+        margin-bottom: 10px;
+    }
+    .submitBtn button {
+        font-size: 1.1rem;
+    }
+}
+@media (min-width: 1200px) {
+    .heroContainer .heroLeft h1 {
+        font-size: 2rem;
+        max-width: 360px;
+    }
+    .heroContainer .heroLeft p {
+        margin-bottom: 40px;
+    }
+    .heroContainer .heroLeft div .heroBtn {
+        padding: 0.8rem 1.15rem;
+    }
+    .reviewGrid {
+        grid-template-columns: 1fr 1fr 1fr;
+        background-color: rgba(243, 243, 243, 0.7);
+        padding: 2rem;
+        border-radius: 15px;
+    }
+    .sectionTitle {
+        grid-column-start: 1;
+        grid-column-end: 4;
+        text-align: center;
+    }
+    .reviewGrid .reviewCard {
+        background-color: var(--white);
+        height: 465px;
+        transition: 0.25s all ease-in-out;
+    }
+    .reviewGrid .reviewCard:hover {
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        transform: scale(1.015);
+    }
+    .reviewGrid .reviewCard .customerReview p {
+        text-align: justify;
+    }
+    .ctaContainer .ctaLeft h2 {
+        font-size: 2rem;
+    }
+    .ctaContainer .ctaLeft p {
+        margin-bottom: 40px;
+    }
+    .ctaContainer .ctaLeft .ctaContact a {
+        padding: 0.8rem 1.15rem;
+    }
+    .projectContainer .projectTitle h2 {
+        font-size: 2rem;
+    }
+    .projectContainer .projectImages {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 15px;
+    }
+}
+@media (min-width: 1299px) {
+    .reviewGrid .reviewCard {
+        height: 430px;
+    }
+    footer {
+        padding: 2rem 4rem;
+        margin-top: 6rem;
+    }
+}
+@media (min-width: 1340px) {
+    .heroContainer {
+        margin-top: 3rem;
+    }
+    .heroContainer .heroLeft h1 {
+        margin-bottom: 25px;
+    }
+    .heroContainer .heroLeft p {
+        max-width: 660px;
+        margin-bottom: 45px;
+    }
+    .reviewGrid .reviewCard {
+        height: 410px;
+    }
+    .ctaContainer .ctaLeft p {
+        max-width: 660px;
+    }
+}
+@media (min-width: 1440px) {
+    .heroContainer .heroLeft p {
+        font-size: 1.05rem;
+    }
+    .reviewGrid .reviewCard {
+        height: 385px;
+    }
+    .ctaContainer .ctaLeft p {
+        font-size: 1.05rem;
+    }
+    .projectContainer .projectImages {
+        gap: 25px;
+        margin-top: 1.5rem;
+    }
+}
+@media (min-width: 1460px) {
+    .reviewGrid .reviewCard {
+        height: 370px;
+    }
+}

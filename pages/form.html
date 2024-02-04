@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- favicon link -->
+        <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="../assets/favicon/apple-touch-icon.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="../assets/favicon/favicon-32x32.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="../assets/favicon/favicon-16x16.png"
+        />
+        <link rel="manifest" href="../assets/favicon/site.webmanifest" />
+        <!-- primary meta tags -->
+        <title>Solar-Direct | Service Request Form</title>
+        <meta name="title" content="Solar-Direct | Service Request Form" />
+        <meta
+            name="description"
+            content="Solar-Direct is a solar solutions company situated in the Western Cape. They offer a wide range of solar panels, inverters, and batteries to meet the needs of any home or business. Their services are backed with a satisfaction guarantee."
+        />
+        <!-- facebook meta tags -->
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://solar-direct.co.za/" />
+        <meta
+            property="og:title"
+            content="Solar-Direct | Service Request Form"
+        />
+        <meta
+            property="og:description"
+            content="Solar-Direct is a solar solutions company situated in the Western Cape. They offer a wide range of solar panels, inverters, and batteries to meet the needs of any home or business. Their services are backed with a satisfaction guarantee."
+        />
+        <!-- css link -->
+        <link rel="stylesheet" href="../assets/css/style.css" />
+        <!-- ion-icons library -->
+        <script
+            type="module"
+            src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+        ></script>
+        <script
+            nomodule
+            src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+        ></script>
+    </head>
+    <body>
+        <nav class="navContainer">
+            <div class="mobileNav">
+                <div class="navLogoHolder">
+                    <img
+                        src="../assets/images/solarDirectLogo.webp"
+                        alt="Solar-Direct's company logo."
+                    />
+                </div>
+                <div class="navNavigationHolder">
+                    <a href="#" id="navMenu"
+                        ><ion-icon name="open-outline"></ion-icon
+                    ></a>
+                </div>
+            </div>
+
+            <div class="mobileMenu">
+                <ul class="menuList">
+                    <li class="listItemHolder" id="email">
+                        <a href="../index.html" class="listItem"
+                            >Return to home</a
+                        ><ion-icon name="home-outline"></ion-icon>
+                    </li>
+                    <li class="listItemHolder" id="whatsapp">
+                        <a
+                            href="https://wa.me/message/MVENUSSXAVILH1"
+                            class="listItem"
+                            >WhatsApp us directly</a
+                        ><ion-icon name="logo-whatsapp"></ion-icon>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="desktopNav">
+                <div class="navLogo">
+                    <img
+                        src="../assets/images/solarDirectLogo.webp"
+                        alt="Solar-Direct's company logo."
+                    />
+                </div>
+                <div class="navLinks">
+                    <ul class="navLinkList">
+                        <li class="navLink" id="email">
+                            <a href="../index.html">Home</a
+                            ><ion-icon name="home-outline"></ion-icon>
+                        </li>
+                        <li class="navLink" id="whatsapp">
+                            <a href="https://wa.me/message/MVENUSSXAVILH1"
+                                >WhatsApp</a
+                            ><ion-icon name="logo-whatsapp"></ion-icon>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <main class="formMain">
+            <h1>Service <span id="inquirySpan">inquiries</span>.</h1>
+            <section class="formContainer">
+                <form
+                    action="https://formsubmit.co/quotes@solar-direct.co.za"
+                    method="post"
+                >
+                    <div class="frmNameSurnameEmail">
+                        <div class="frmNameSurname">
+                            <div>
+                                <label for="clientNameSurname"
+                                    >Name & Surname</label
+                                >
+                            </div>
+                            <div>
+                                <input
+                                    type="text"
+                                    name="name & surname"
+                                    id="clientNameSurname"
+                                    required
+                                />
+                            </div>
+                        </div>
+                        <div class="frmEmail">
+                            <div>
+                                <label for="clientEmail">Email Address</label>
+                            </div>
+                            <div>
+                                <input
+                                    type="email"
+                                    name="email"
+                                    id="clientEmail"
+                                    required
+                                />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="frmCellResAddress">
+                        <div class="frmCell">
+                            <div>
+                                <label for="clientCellphoneNumber"
+                                    >Cellphone Number</label
+                                >
+                            </div>
+                            <div>
+                                <input
+                                    type="tel"
+                                    name="cellphone number"
+                                    id="clientCellphoneNumber"
+                                    required
+                                    maxlength="10"
+                                />
+                            </div>
+                        </div>
+                        <div class="frmResAddress">
+                            <div class="frmLotType">
+                                <div>
+                                    <label for="clientLotType">Lot Type</label>
+                                </div>
+                                <div>
+                                    <select
+                                        name="lot type"
+                                        id="clientLotType"
+                                        required
+                                    >
+                                        <option value="">
+                                            Select your lot type...
+                                        </option>
+                                        <option value="freestandingLot">
+                                            Freestanding
+                                        </option>
+                                        <option value="complexLot">
+                                            Complex
+                                        </option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="frmAddress">
+                                <div>
+                                    <label for="clientAddress"
+                                        >Residential Address</label
+                                    >
+                                </div>
+                                <div>
+                                    <input
+                                        type="text"
+                                        name="address"
+                                        id="clientAddress"
+                                        required
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="frmRoofHouseStats">
+                        <div class="frmRoofStats">
+                            <div class="frmRoofDirection">
+                                <div>
+                                    <label for="roofDirection"
+                                        >Roof Direction</label
+                                    >
+                                </div>
+                                <div>
+                                    <select
+                                        name="roof direction"
+                                        id="roofDirection"
+                                        required
+                                    >
+                                        <option value="">
+                                            The roof faces approximately...
+                                        </option>
+                                        <option value="North">North</option>
+                                        <option value="East">East</option>
+                                        <option value="South">South</option>
+                                        <option value="West">West</option>
+                                        <option value="Uncertain">
+                                            Uncertain
+                                        </option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="frmRoofAngle">
+                                <div>
+                                    <label for="roofAngle"
+                                        >Roof Angle (Degree&#176;)</label
+                                    >
+                                </div>
+                                <div>
+                                    <input
+                                        type="number"
+                                        name="roof angle"
+                                        id="roofAngle"
+                                        required
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="frmHouseStats">
+                            <div class="frmHouseSize">
+                                <div>
+                                    <label for="totalResidents"
+                                        >Total Residents</label
+                                    >
+                                </div>
+                                <div>
+                                    <input
+                                        type="number"
+                                        name="total residents"
+                                        id="totalResidents"
+                                        required
+                                    />
+                                </div>
+                            </div>
+                            <div class="frmUsageSched">
+                                <div>
+                                    <label for="">Usage Schedule</label>
+                                </div>
+                                <div>
+                                    <select
+                                        name="usage schedule"
+                                        id="usageSchedule"
+                                        required
+                                    >
+                                        <option value="">
+                                            Power is used mostly during...
+                                        </option>
+                                        <option value="Day Time Usage">
+                                            Day-time
+                                        </option>
+                                        <option value="Night Time Usage">
+                                            Night-time
+                                        </option>
+                                        <option value="Balanced Usage">
+                                            Balanced
+                                        </option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="frmPaymentType">
+                        <legend>Select a payment type:</legend>
+                        <div class="paymentContainer">
+                            <div>
+                                <input
+                                    type="radio"
+                                    name="payment type"
+                                    id="cashPayment"
+                                    value="Cash"
+                                    required
+                                />
+                                <label for="cashPayment">Cash</label>
+                            </div>
+                            <div>
+                                <input
+                                    type="radio"
+                                    name="payment type"
+                                    id="financePayment"
+                                    value="Finance"
+                                    required
+                                />
+                                <label for="financePayment">Finance</label>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- hidden form setups -->
+                    <input type="hidden" name="_captcha" value="false" />
+                    <input type="hidden" name="_template" value="box" />
+                    <input
+                        type="hidden"
+                        name="_autoresponse"
+                        value="Thank you for reaching out to the Solar-Direct team. We appreciate your inquiry. To expedite the processing of your request, we kindly request that you respond to this email by attaching clear images of both your DB box and Roof. Once we have received the necessary documentation, you can expect to be contacted within 24 hours."
+                    />
+                    <input
+                        type="hidden"
+                        name="_next"
+                        value="https://solar-direct.co.za/pages/submitted.html"
+                    />
+                    <div class="submitBtn">
+                        <button type="submit">Send Inquiry</button>
+                    </div>
+                </form>
+            </section>
+        </main>
+
+        <footer>
+            <div class="footerNav">
+                <ul>
+                    <li>
+                        <a href="../index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="https://wa.me/message/MVENUSSXAVILH1"
+                            >WhatsApp</a
+                        >
+                    </li>
+                </ul>
+            </div>
+            <div class="footerSupp">
+                <img
+                    src="../assets/images/supplier24Logo.png"
+                    alt="Supplier 24's company logo."
+                />
+                <p>
+                    <small>
+                        Solar-Direct partners with Supplier 24 to deliver top
+                        quality solar solutions.</small
+                    >
+                </p>
+            </div>
+        </footer>
+
+        <!-- js link -->
+        <script src="../assets/js/app.js"></script>
+    </body>
+</html>
